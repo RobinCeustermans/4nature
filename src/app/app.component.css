@@ -1,0 +1,125 @@
+
+
+.navigatie{
+  height: 9em;
+  margin-top: -30px;
+}
+
+.navigatie:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image:  url("../assets/svg/golfNavbar.svg");
+  opacity: .8;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-nav{
+  display: none;
+
+}
+
+@media screen and (min-width: 1721px){
+  .logoWit{
+    width: 35%;
+  }
+
+  .nav-item{
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1420px){
+    .navigatie{
+      height: 6.2em;
+      margin-top: -10px;
+    }
+  .nav-item{
+    font-size: 90%;
+  }
+
+  .logoWit{
+    width: 35%;
+  }
+
+}
+
+
+.navbar-toggler{
+   margin-bottom: 10px;
+}
+
+.nav-item{
+  padding-bottom: 1.5em;
+  padding-top: 2.5em;
+}
+
+.nav-link{
+  color: white !important;
+  font-weight: 600;
+}
+
+.nav-link:hover{
+  transform: scale(1.1);
+  transition: 400ms;
+}
+
+.nav-link:active{
+  color: var(--accent) !important;
+}
+
+.logoWit{
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 991px){
+  .navigatie{
+    width: 40%;
+    padding-top: 40px;
+    z-index: 10;
+  }
+
+  .navigatie:before{
+    background-image: none;
+
+  }
+
+  .navList{
+    border-radius: 100px;
+  }
+
+  .nav-item{
+    background-color: #255048;
+    padding-top: 20px;
+    margin: -5px;
+  }
+
+  .home-nav{
+    display: initial;
+    margin-top: 20px;
+    border-radius: 50px 50px 0 0px;
+  }
+  .logo-nav{
+    display: none;
+  }
+
+  .contact-nav{
+    border-radius: 0 0px 50px 50px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px){
+  .navigatie{
+    background-image: none;
+    width: 100%;
+  }
+}

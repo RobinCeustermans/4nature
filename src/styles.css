@@ -1,0 +1,452 @@
+
+
+body{
+  background-color: var(--background);
+}
+
+
+/*voor de heading van home en bedrijven*/
+
+
+:root{
+  --primaryGreen: #22502A;
+  --primaryBlue: #255048;
+  --background: #EBEBE0;
+  --primaryGrey: #768B7A;
+  --accent: #929D15;
+  --secondaryFont: #FFFFFF;
+  --paragraph: 20px;
+  --header2: 50px;
+}
+
+.headerHome{
+  background-image: url("assets/img/forestHeader.jpg");
+  width: 100%;
+  height: 100%;
+  padding:0;
+  margin:0;
+  z-index: -2;
+  top: 0;
+  left:0;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parentHeader{
+  display:flex;
+  height:100%;
+  width:100%;
+  justify-content:center;
+  align-items:center;
+}
+
+.heading{
+  text-align: center;
+  margin-bottom: 7.5%;
+}
+
+.logo-header{
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.button-box {
+  text-align:center;
+  margin-top: 20px;
+}
+
+.beheerBtn{
+  border-style: none;
+  border-radius: 15px;
+  color: white;
+  width: 170px;
+  opacity: 80%;
+}
+
+.logo-header:hover,.beheerBtn:hover ,.beheerBtn3:hover ,.beheerBtn2:hover, .vlaanderenImg:hover
+,.hoeBtn:hover{
+  transform: scale(1.1);
+  transition: 400ms;
+}
+
+.beheerBtn{
+  background-color: #22502A;
+}
+
+/*onder de header homepage en bedrijvenpage*/
+
+.content {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.call-to-action-background{
+  background-image: url("assets/svg/golfFooter-cropped.svg");
+  background-repeat: repeat-y;
+  white-space: break-spaces;
+  display: inline-block;
+  width: 100%;
+  height: 150px;
+  /*z-index: 10;*/
+  margin-top: -7em;
+  vertical-align: top;
+  background-position: center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.call-to-action{
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+}
+
+.call-to-action > h2{
+  font-size: 50px;
+  color: var(--background);
+  padding-top: 35px;
+  text-align: center;
+}
+
+
+.call-to-action-background-container{
+  background-color: #22502A;
+  margin-bottom: -5.5em;
+}
+
+
+.call-to-action-usp{
+  background-color: #22502A;
+  align-content: center;
+  z-index: 30;
+  /*z-index: -30;*/
+  position: center;
+}
+
+.call-to-action-usp > p{
+  color: var(--background);
+  font-size: 1.2vw;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-left: 10em;
+  padding-right: 10em;
+  margin-bottom: 0;
+}
+
+
+.call-to-action-background2{
+  background-image: url("assets/svg/golfNavbar-cropped.svg");
+  background-repeat: repeat-y;
+  white-space: break-spaces;
+  display: inline-block;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  vertical-align: top;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.beheerBtn2, .beheerBtn3, .hoeBtn, .nieuwsBtn{
+  border-style: none;
+  border-radius: 15px;
+  color: var(--background);
+  width: 250px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.beheerBtn2{
+  margin-top: 3em !important;
+  background-color: var(--accent);
+}
+
+
+
+
+
+
+/*blok2 van beheer mee, blok 2 van hoe en blok3 bedrijven pagina, vlak onder de call to action header*/
+
+.blok2bedrijf, .blok3beheer, .blok2hoe{
+  width: 100%;
+  text-align: left;
+}
+
+.blok1BedrijfInfoContainer, .blok1BeheerInfoContainer, .blok1HoeInfoContainer{
+  width: 40vw;
+  margin-left: 4vw;
+}
+
+
+.imageContainerBedrijf, .imageContainerBeheer, .imageContainerHoe{
+  flex-direction: row;
+  align-items: flex-start;
+  vertical-align: bottom;
+  color: var(--background);
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.imageContainerBedrijf > h2, .imageContainerBeheer > h2, .blok2bedrijf > h2, .blok4 > h2,
+.blok3bedrijf > h2, .blok2beheer > h2, .prijs, .blok4bedrijf > h2,  .blok5bedrijf > h2
+,.blok1hoeText > h2, .imageContainerHoe > h2, .streefdoelenText > h2{
+  font-size: 3vw;
+  color: var(--primaryGreen);
+}
+
+.imageContainerBedrijf > h2, .imageContainerBeheer > h2 , .imageContainerHoe > h2{
+  display: flex;
+  margin: 0;
+  bottom: 0;
+  left:  20%;
+  position: absolute;
+}
+
+.blok1BedrijfInfoContainer > h4, .blok1BedrijfInfoContainer > p
+, .blok1BeheerInfoContainer > h4, .blok1BeheerInfoContainer > p  {
+  margin: 2vw 3vw 1vw 1vw;
+}
+
+.blok1BedrijfInfoContainer > h4, .blok1BeheerInfoContainer > h4
+, .imageContainerBeheer > h4, .blok2beheer > h4, .blok5bedrijf > h4,
+.blok1hoeText > h4, .blok1HoeInfoContainer > h4, .streefdoelenText > h4{
+  color: var(--primaryBlue);
+  font-size: 1.5vw;
+}
+
+.blok1BedrijfInfoContainer > p, .blok2bedrijf >p,
+.blok1BeheerInfoContainer > p, .blok2beheer > p, .blok3beheer >p
+, .blok1HoeInfoContainer > p
+{
+  font-size: 1.2vw;
+}
+
+.treeImage{
+  height: 8vw;
+}
+
+.blobContainerBedrijf1, .blobContainerBeheer1{
+  text-align: right;
+  margin-top: 3vw;
+  margin-bottom: 10vw;
+
+}
+
+
+.blok2bedrijf> a, .blok3beheer > a{
+  width: 250px;
+  left: 50%;
+  margin: 0 auto;
+  border-radius: 50px;
+  color: #FFFFFF !important;
+  background-color: var(--primaryBlue);
+  border-style: none;
+}
+
+
+
+/*blobs aan rechter en linker kant homepagina en bedrijvenpagina*/
+
+#blobSvg, #blobSvg2{
+  width: 40vw;
+  height: 35vw;
+}
+
+.blobContainer2{
+  text-align: right;
+  margin-top: -10vw;
+}
+
+
+#blobSvg2{
+  moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin-top: -15vw;
+  position: relative;
+  z-index: -10;
+}
+
+
+
+/*kaart bos van beheer-mee en bedrijven*/
+
+
+.blok2beheer > h2, .blok5bedrijf > h2{
+  margin-bottom: 5vw;
+}
+
+.blok2beheer > h4, .blok5bedrijf > h4{
+  width: 75vw;
+  margin: 0 auto;
+  left: 25%;
+}
+
+#kaartBlob{
+  margin-top: 3vw;
+  width: 80vw;
+  height: 43vw;
+  opacity: 40%;
+  position: relative;
+  z-index: -10;
+}
+
+.kaartBlobContainer > img{
+  width: 65vw;
+  margin-top: -40vw;
+  position: relative;
+  z-index: 10;
+}
+
+
+
+
+/*header overige paginas*/
+
+
+
+
+
+
+.backGroundContainer2{
+  padding:0;
+  margin:0;
+  z-index: -2;
+  top: 0;
+  left:0;
+  width: 100%;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.backgroundGreen2{
+  background-color: #22502A;
+  height: 17vw;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.heading2{
+  padding-top: 7vw;
+  text-align: center;
+  margin-bottom: 7.5%;
+  position: relative;
+  z-index: 10;
+}
+
+.heading2 > h1{
+  font-size: 3vw;
+}
+
+.logo-header2{
+  width: 6vw;
+  margin-bottom: 20px;
+}
+
+
+.backgroundGreen2 > h1{
+  padding-top: 10vw;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 100;
+}
+
+.golfGroen2{
+  background-image: url("assets/svg/golfNavbar.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 13vw;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+
+}
+
+
+.headerBeheer2{
+  background-image: url("assets/img/forestHeaderBeheer.jpg");
+  width: 70%;
+  height: 38vw;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.backGroundGrey2{
+  height: 18vw;
+  background-color: var(--primaryGrey);
+  position: relative;
+  margin-top: -350px;
+  z-index: -1;
+}
+
+.golfGrijs2{
+  background-image: url("assets/svg/golfGrijs-cropped.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  /*z-index: 10;*/
+  background-size: cover;
+  position: relative;
+  z-index: -2;
+}
+
+.content2{
+  margin-top: 20vw;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+
+
+/*iconbar*/
+
+
+
+
+.icon-bar1 {
+  border-radius: 0 60px 150px 0px;
+  margin-top: 20vw;
+}
+
+.icon-bar1 > i {
+  /*float: right;*/
+  text-align: center;
+  width: 15%;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 2.6vw;
+
+}
+
+.icon-bar1 > i > p{
+  font-size: 1.6vw;
+  font-family: "Roboto", serif;
+  margin-top: 20px;
+}
+
+.icon-bar1 > i:hover {
+  transform: scale(0.9);
+}
