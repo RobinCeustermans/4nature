@@ -21,8 +21,14 @@
 
 .home-nav{
   display: none;
-
 }
+
+span.navbar-toggler-icon{
+  background-color: #22502A !important;
+  border-radius: 10px !important;
+}
+
+
 
 @media screen and (min-width: 1721px){
   .logoWit{
