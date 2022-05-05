@@ -1,0 +1,55 @@
+:root{
+  --primaryGreen: #22502A;
+  --primaryBlue: #255048;
+  --background: #EBEBE0;
+  --primaryGrey: #768B7A;
+  --accent: #929D15;
+  --secondaryFont: #FFFFFF;
+  --paragraph: 20px;
+  --header2: 50px;
+}
+
+
+/*dit id mag niet veranderd worden en moet hier blijven staan*/
+#kaartBlob{
+  height: 35vw;
+}
+
+.partnerText {
+  padding: 5vw 5vw 0 5vw;
+  font-weight: 500;
+}
+
+
+
+
+/*blok1*/
+
+
+
+
+.blok3partners{
+  text-align: center;
+  margin-bottom: 10vw;
+}
+
+.blok3partners > h2{
+  margin-top: 20vw;
+  margin-bottom: 7vw;
+}
+
+.backgroundLogo{
+  padding: 10px 40px 10px 40px !important;
+  width: 13vw;
+  margin: 0 auto;
+  left: 50%;
+  background-color: var(--primaryGreen);
+}
+
+.ceo{
+  margin-bottom: 2vw;
+}
+
+.bedrijfsFotos{
+  border-radius: 50px;
+}
