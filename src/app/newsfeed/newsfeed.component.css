@@ -1,0 +1,73 @@
+.blok1Realisaties{
+  margin-top: 25vw;
+  text-align: center;
+  margin-bottom: 10vw;
+}
+
+.blok1Realisaties > h2 {
+  margin-bottom: 3vw;
+}
+
+.flipContainer{
+  text-align: center;
+}
+
+.realisatieTitel{
+  font-size: 1.1vw;
+  margin-top: 2vw;
+}
+
+
+
+/*blok2, de rest staat in het scss file*/
+
+
+
+
+.blok2Realisaties{
+  margin-bottom: 10vw;
+}
+
+.blok2RealisatiesH2Container{
+  text-align: center;
+}
+
+.cardContainer{
+  padding: 0px 110px 0px 120px;
+  text-align: center;
+  width: 100%;
+  margin-top: -25vw;
+}
+
+.nieuwsCard{
+  width: 90%;
+  border-radius: 100px;
+  padding: 60px 0 60px 0px;
+  opacity: 85%;
+  margin-top: 3vw;
+}
+
+.nieuwsCard > img{
+  border-radius: 50% 50% 40% 45% / 45% 60% 35% 45%;
+  padding: 20px 80px 20px 80px;
+}
+
+.nieuwsCard > div > span{
+  color: var(--primaryBlue)
+}
+
+.nieuwsCard > div > p{
+  padding: 20px 60px 20px 60px;
+}
+
+.nieuwsCard > div > a{
+  border-style: none;
+  border-radius: 15px;
+  background-color: var(--primaryBlue);
+  color: var(--background);
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+

@@ -94,12 +94,6 @@
   z-index: 20;
 }
 
-.beheerBtn3, .hoeBtn{
-  background-color: var(--primaryBlue);
-  margin-top: 3vw;
-}
-
-
 .blobContainer2 > p{
   margin-right: 60px;
   margin-top: -29vw;
@@ -308,15 +302,7 @@
   }
 }
 
-
-
 @media screen and (max-width: 991px ){
-  .call-to-action-usp > p{
-    padding-left: 3em;
-    padding-right: 3em;
-    font-size: 3.3vw;
-  }
-
 
   .vlaanderenImg{
     border-radius: 150px;
@@ -406,13 +392,13 @@
     margin-bottom: 25vw;
   }
 
+
   .blobContainer2-blok3 > p{
     margin-right: 5vw;
     margin-top: -105vw;
     padding-left: 28vw;
     font-size: 3.3vw;
   }
-
 
 
   /*blok4*/
@@ -464,20 +450,20 @@
   }
 }
 
+@media screen and (min-width: 1750px){
+
+  .blobContainer2-blok3{
+    margin-bottom: 1vw !important;
+  }
+
+  .blobContainer2-blok3 > p{
+    margin-top: -38vw;
+  }
+
+}
+
 @media screen and (max-width: 576px){
 
-  .call-to-action > h2, .blok2 > h2, .blok4 > h2{
-    font-size: 8vw;
-  }
-
-  .call-to-action-usp > p{
-    font-size: 4.2vw;
-  }
-
-  .beheerBtn2, .beheerBtn3, .hoeBtn, .nieuwsBtn{
-    width: 170px;
-    font-size: 16px;
-  }
 
   .beheerBtn3{
     margin-top: 30vw;

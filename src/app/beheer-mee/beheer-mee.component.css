@@ -154,9 +154,15 @@
 
 /*blok3*/
 
+.blok3beheer{
+  width: 99.5%;
+}
+
+.blobContainerBeheer1{
+  /*margin-right: -5vw;*/
+}
 
 
-/*rest staat boven*/
 .blobContainerBeheer1 > img{
   height: 30vw;
   width: 22.5vw;
@@ -177,6 +183,7 @@
   height: 40vw;
   width: 40.33vw;
   position: absolute;
+  /*margin-right: -50vw;*/
 }
 
 
@@ -208,18 +215,8 @@
   width: 100%;
 }
 
-.medeCard{
-  width: 90%;
-  border-radius: 100px;
-  padding: 60px 0 60px 0px;
-  opacity: 85%;
-}
+/*stijl kaart staat in styles.css*/
 
-
-.medeCard > img{
-  border-radius: 50% 50% 40% 45% / 45% 60% 35% 45%;
-  padding: 20px 80px 20px 80px;
-}
 
 .medeCard > div > p{
   padding: 20px 60px 20px 60px;
