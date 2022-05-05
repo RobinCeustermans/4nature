@@ -1,0 +1,254 @@
+:root{
+  --primaryGreen: #22502A;
+  --primaryBlue: #255048;
+  --background: #EBEBE0;
+  --primaryGrey: #768B7A;
+  --accent: #929D15;
+  --secondaryFont: #FFFFFF;
+  --paragraph: 20px;
+  --header2: 50px;
+}
+
+
+.backGroundContainer{
+  padding:0;
+  margin:0;
+  z-index: -2;
+  top: 0;
+  left:0;
+  width: 100%;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.backgroundGreen{
+  background-color: #22502A;
+  height: 28vw;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.golfGroen{
+  background-image: url("../../assets/svg/golfNavbar.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 13vw;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.headerBeheerContainer{
+  text-align: center;
+  width: 100%;
+  margin-top: -32vw;
+  position: relative;
+  z-index: 20;
+
+}
+
+.headerBeheer, .blobContainerBeheer1 > img{
+  border-radius: 50px;
+  border: 25px solid var(--primaryBlue);
+}
+
+.headerBeheer{
+  background-image: url("../../assets/img/forestHeaderBeheer.jpg");
+  width: 70%;
+  height: 38vw;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.headerBeheer:hover{
+  transform: scale(1.02);
+  transition: 400ms;
+}
+
+.logo-header{
+  margin-top: 20px;
+  width: 10%;
+  margin-bottom: 20px;
+}
+
+.backGroundGrey{
+  height: 18vw;
+  background-color: var(--primaryGrey);
+  position: relative;
+  margin-top: -350px;
+  z-index: -1;
+}
+
+.golfGrijs{
+  background-image: url("../../assets/svg/golfGrijs-cropped.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  /*z-index: 10;*/
+  background-size: cover;
+  position: relative;
+  z-index: -2;
+}
+
+.blobCall{
+  margin-top: 22vw;
+  margin-left: 10vw;
+}
+
+.blobBeheer1{
+  width: 40%;
+}
+
+.actionCall{
+  margin-top: -22vw;
+  margin-left: 14vw;
+}
+
+
+.actionCall > h2{
+  font-size: 2vw;
+}
+
+.actionCall > h4{
+  font-size: 1.3vw;
+}
+
+
+.actionCall > a {
+  margin-top: 3vw;
+    border-style: none;
+    border-radius: 15px;
+    background-color: var(--accent);
+    color: var(--primaryBlue);
+    width: 10vw;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.content{
+  margin-top: 20vw;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+
+
+/*blok2*/
+
+.blok2beheer{
+  text-align: center;
+  margin-bottom: 15vw;
+}
+
+
+
+
+
+/*blok3*/
+
+.blok3beheer{
+  width: 99.5%;
+}
+
+.blobContainerBeheer1{
+  /*margin-right: -5vw;*/
+}
+
+
+.blobContainerBeheer1 > img{
+  height: 30vw;
+  width: 22.5vw;
+  position: relative;
+  z-index: 10;
+  margin-top: 3vw;
+  margin-right: 11vw;
+  border-radius: 50px;
+}
+
+
+#blobInfoBeheer1{
+  moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  z-index: -10;
+  height: 40vw;
+  width: 40.33vw;
+  position: absolute;
+  /*margin-right: -50vw;*/
+}
+
+
+
+/*blok4*/
+
+.blok4{
+  text-align: center;
+  margin-bottom: 20vw;
+}
+
+
+.medeBlobContainer1{
+  text-align: left;
+  z-index: -10;
+  margin-bottom: -28vw;
+}
+
+#blobMede1, #blobMede2{
+  height: 35vw;
+  width: 40vw;
+}
+
+
+.medeContainer{
+  padding: 0px 110px 0px 120px;
+  margin-bottom: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+/*stijl kaart staat in styles.css*/
+
+
+.medeCard > div > p{
+  padding: 20px 60px 20px 60px;
+}
+
+.medeCard > div > a{
+  border-style: none;
+  border-radius: 15px;
+  background-color: var(--primaryBlue);
+  color: var(--background);
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.medeBlobContainer2{
+  text-align: right;
+  margin-top: -33vw;
+}
+
+#blobMede2{
+  moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: relative;
+  z-index: -10;
+}
+
+.blok4 > h2{
+  margin-top: 6vw;
+  margin-bottom: 6vw;
+}
+
