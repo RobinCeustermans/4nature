@@ -344,12 +344,13 @@ body{
 
 /*blok2 van beheer mee, blok 2 van hoe en blok3 bedrijven pagina, vlak onder de call to action header*/
 
-.blok2bedrijf, .blok3beheer, .blok2hoe{
+.blok2bedrijf, .blok3beheer, .blok2hoe, .blok0hoe{
   width: 100%;
   text-align: left;
 }
 
-.blok1BedrijfInfoContainer, .blok1BeheerInfoContainer, .blok1HoeInfoContainer{
+.blok1BedrijfInfoContainer, .blok1BeheerInfoContainer, .blok1HoeInfoContainer
+, .blok0hoeInfoContainer{
   width: 40vw;
   margin-left: 4vw;
 }
@@ -370,7 +371,8 @@ body{
 .imageContainerBedrijf > h2, .imageContainerBeheer > h2, .blok2bedrijf > h2, .blok4 > h2,
 .blok3bedrijf > h2, .blok2beheer > h2, .prijs, .blok4bedrijf > h2,  .blok5bedrijf > h2
 ,.blok1hoeText > h2, .imageContainerHoe > h2, .streefdoelenText > h2, .blok3overOnsTextContainer > h2
-, .blok3partners > h2, .blok1Realisaties > h2, .blok2RealisatiesH2Container > h2 {
+, .blok3partners > h2, .blok1Realisaties > h2, .blok2RealisatiesH2Container > h2
+, .blok0hoeInfoContainer > h2, .eerstebBlokHoeTextContainer > h2{
   font-size: 3vw;
   color: var(--primaryGreen);
 }
@@ -389,7 +391,8 @@ body{
 }
 
 .blok1BedrijfInfoContainer > h4, .blok1BeheerInfoContainer > h4
-, .imageContainerBeheer > h4, .blok2beheer > h4, .blok5bedrijf > h4,
+, .imageContainerBeheer > h4, .blok2beheer > h4, .blok5bedrijf > h4
+, .blok0hoeInfoContainer > h4,
 .blok1hoeText > h4, .blok1HoeInfoContainer > h4, .streefdoelenText > h4
 , .partnerText, .ceo, .overOnsText, .blok3overOnsTextContainer > h4{
   color: var(--primaryBlue);
@@ -398,7 +401,7 @@ body{
 
 .blok1BedrijfInfoContainer > p, .blok2bedrijf >p,
 .blok1BeheerInfoContainer > p, .blok2beheer > p, .blok3beheer >p
-, .blok1HoeInfoContainer > p, .quote
+,.pBlok0HoeInfoContainer, .blok1HoeInfoContainer > p, .quote
 {
   font-size: 1.2vw;
 }
@@ -563,32 +566,6 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 
-}
-
-.backGroundGrey2{
-  height: 18vw;
-  background-color: var(--primaryGrey);
-  position: relative;
-  margin-top: -350px;
-  z-index: -1;
-}
-
-.golfGrijs2{
-  background-image: url("assets/svg/golfGrijs-cropped.svg");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 250px;
-  /*z-index: 10;*/
-  background-size: cover;
-  position: relative;
-  z-index: -2;
-}
-
-.content2{
-  margin-top: 20vw;
-  position: absolute;
-  top: 100%;
-  width: 100%;
 }
 
 
