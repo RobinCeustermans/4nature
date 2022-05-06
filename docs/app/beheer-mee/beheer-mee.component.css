@@ -208,14 +208,31 @@
 }
 
 
+/*stijl kaart staat in styles.css*/
+
 .medeContainer{
-  padding: 0px 110px 0px 120px;
+  padding: 0 5vw 0 5.2vw;
   margin-bottom: 100px;
   text-align: center;
   width: 100%;
 }
 
-/*stijl kaart staat in styles.css*/
+.medeCard{
+  width: 90%;
+  border-radius: 100px;
+  padding: 60px 0 60px 0px;
+  opacity: 85%;
+  text-align: center;
+}
+
+.medeCard> img{
+  border-radius: 50% 50% 40% 45% / 45% 60% 35% 45%;
+  padding: 2vw 2.3vw 2vw 2.3vw;
+  width: 25vw;
+  margin: 0 auto;
+  left: 25%
+}
+
 
 
 .medeCard > div > p{

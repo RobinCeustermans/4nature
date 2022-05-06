@@ -45,11 +45,15 @@
   padding: 60px 0 60px 0px;
   opacity: 85%;
   margin-top: 3vw;
+  text-align: center;
 }
 
 .nieuwsCard > img{
   border-radius: 50% 50% 40% 45% / 45% 60% 35% 45%;
-  padding: 20px 80px 20px 80px;
+  padding: 2vw 2.3vw 2vw 2.3vw;
+  width: 25vw;
+  margin: 0 auto;
+  left: 25%
 }
 
 .nieuwsCard > div > span{
