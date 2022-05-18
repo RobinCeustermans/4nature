@@ -2,6 +2,7 @@
 
 body{
   background-color: var(--background);
+  padding:0; margin:0; width:100%;
 }
 
 
@@ -100,6 +101,9 @@ body{
 
 }
 
+
+
+
 @media screen and (max-width: 991px){
   .navigatie{
     width: 40%;
@@ -148,8 +152,9 @@ body{
 
 
 
-
 /*voor de heading van home en bedrijven*/
+
+
 
 
 
@@ -282,8 +287,9 @@ body{
   white-space: break-spaces;
   display: inline-block;
   width: 100%;
-  height: 9vw;
+  height: 8vw;
   position: relative;
+  margin-top: -4vw;
   z-index: -1;
   vertical-align: top;
   background-position: center;
@@ -306,43 +312,14 @@ body{
   /*margin-bottom: 10vw !important;*/
 }
 
-@media screen and (max-width: 991px){
-  .call-to-action-usp > p{
-    padding-left: 3em;
-    padding-right: 3em;
-    font-size: 1.7vw;
-  }
-}
 
-@media screen and (max-width: 576px){
-  .callToActionContainer{
-    margin-top: -15.5vw;
-  }
-
-  .call-to-action-background{
-    height: 18.5vw;
-  }
-
-  .call-to-action-usp > p{
-    padding-top: 10vw;
-  }
-
-  .call-to-action > h2, .blok2 > h2, .blok4 > h2{
-    font-size: 8vw;
-  }
-
-  .call-to-action-usp > p{
-    font-size: 4.2vw;
-  }
-
-  .beheerBtn2, .beheerBtn3, .hoeBtn, .nieuwsBtn{
-    width: 170px;
-    font-size: 16px;
-  }
-}
 
 
 /*blok2 van beheer mee, blok 2 van hoe en blok3 bedrijven pagina, vlak onder de call to action header*/
+
+
+
+
 
 .blok2bedrijf, .blok3beheer, .blok2hoe, .blok0hoe{
   width: 100%;
@@ -350,7 +327,7 @@ body{
 }
 
 .blok1BedrijfInfoContainer, .blok1BeheerInfoContainer, .blok1HoeInfoContainer
-, .blok0hoeInfoContainer{
+, .blok0hoeInfoContainer, .blok5BedrijfInfoContainer{
   width: 40vw;
   margin-left: 4vw;
 }
@@ -372,17 +349,17 @@ body{
 .blok3bedrijf > h2, .blok2beheer > h2, .prijs, .blok4bedrijf > h2,  .blok5bedrijf > h2
 ,.blok1hoeText > h2, .imageContainerHoe > h2, .streefdoelenText > h2, .blok3overOnsTextContainer > h2
 , .blok3partners > h2, .blok1Realisaties > h2, .blok2RealisatiesH2Container > h2
-, .blok0hoeInfoContainer > h2, .eerstebBlokHoeTextContainer > h2{
+, .blok0hoeInfoContainer > h2, .eerstebBlokHoeTextContainer > h2, .blok5BedrijfInfoContainer > h2
+, .blok6bedrijf > h2, .blok4hoeInfoContainer > h2{
   font-size: 3vw;
   color: var(--primaryGreen);
 }
 
 .imageContainerBedrijf > h2, .imageContainerBeheer > h2 , .imageContainerHoe > h2{
   display: flex;
-  margin: 0;
   bottom: 0;
-  left:  20%;
-  position: absolute;
+  margin-top: 4vw;
+  text-align: center;
 }
 
 .blok1BedrijfInfoContainer > h4, .blok1BedrijfInfoContainer > p
@@ -394,14 +371,16 @@ body{
 , .imageContainerBeheer > h4, .blok2beheer > h4, .blok5bedrijf > h4
 , .blok0hoeInfoContainer > h4,
 .blok1hoeText > h4, .blok1HoeInfoContainer > h4, .streefdoelenText > h4
-, .partnerText, .ceo, .overOnsText, .blok3overOnsTextContainer > h4{
+, .partnerText, .ceo, .overOnsText, .blok3overOnsTextContainer > h4
+, .blok5BedrijfInfoContainer > h4, .blok4hoeInfoContainer > h4{
   color: var(--primaryBlue);
   font-size: 1.5vw;
 }
 
 .blok1BedrijfInfoContainer > p, .blok2bedrijf >p,
 .blok1BeheerInfoContainer > p, .blok2beheer > p, .blok3beheer >p
-,.pBlok0HoeInfoContainer, .blok1HoeInfoContainer > p, .quote
+,.pBlok0HoeInfoContainer, .blok1HoeInfoContainer > p, .quote, .pBlok4HoeInfoContainer
+, .blok5BedrijfInfoContainer > p
 {
   font-size: 1.2vw;
 }
@@ -485,6 +464,7 @@ body{
   margin-top: -40vw;
   position: relative;
   z-index: 10;
+  border-radius: 50px;
 }
 
 
@@ -520,6 +500,21 @@ body{
   text-align: center;
 }
 
+/*.golfGroen, .golfGrijs,*/
+.golfGroen2{
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 13vw;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  margin-top: -5vw;
+}
+
+.golfGroen2{
+  background-image: url("assets/svg/golfNavbar-cropped.svg");
+}
+
 .heading2{
   padding-top: 7vw;
   text-align: center;
@@ -545,28 +540,8 @@ body{
   z-index: 100;
 }
 
-.golfGroen2{
-  background-image: url("assets/svg/golfNavbar.svg");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 13vw;
-  background-size: cover;
-  position: relative;
-  z-index: 0;
-
-}
 
 
-.headerBeheer2{
-  background-image: url("assets/img/forestHeaderBeheer.jpg");
-  width: 70%;
-  height: 38vw;
-  display: inline-block;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
 
 
 
@@ -610,10 +585,73 @@ body{
 
 .medeCard, .partnerCard{
   width: 90%;
-  border-radius: 100px;
+  border-radius: 3vw;
   padding: 60px 0 60px 0px;
   opacity: 85%;
   text-align: center;
+}
+
+
+.medeCard, .partnerCard{
+  width: 90%;
+  border-radius: 3vw;
+  padding: 60px 0 60px 0px;
+  opacity: 85%;
+  text-align: center;
+}
+
+
+
+/*stijl nieuwskaart op de home en nieuwsfeedpagina*/
+.cardContainer{
+  padding: 0px 110px 0px 120px;
+  text-align: center;
+  width: 100%;
+  margin-top: -25vw;
+}
+
+.nieuwsCard{
+  width: 90%;
+  border-radius: 100px;
+  padding: 60px 0 60px 0px;
+  opacity: 85%;
+  margin-top: 3vw;
+  text-align: center;
+  position: relative;
+}
+
+.nieuwsCard > img{
+  border-radius: 50% 50% 40% 45% / 45% 60% 35% 45%;
+  padding: 2vw 2.3vw 2vw 2.3vw;
+  width: 25vw;
+  margin: 0 auto;
+  left: 25%
+}
+
+.nieuwsCard > div > h5{
+  font-size: 1.6vw;
+  color: var(--primaryBlue)
+}
+
+.nieuwsCard > div > span{
+  font-size: 1vw;
+  color: var(--primaryBlue)
+}
+
+.nieuwsCard > div > p{
+  font-size: 0.8vw;
+  padding: 20px 60px 20px 60px;
+}
+
+.nieuwsCard > div > a{
+  border-style: none;
+  border-radius: 15px;
+  background-color: var(--primaryBlue);
+  color: var(--background);
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+
 }
 
 
@@ -655,4 +693,409 @@ body{
 }
 
 
+
+/*de kaarjes met voordelen*/
+
+.containerVoordelen{
+  max-width: 90%;
+
+}
+
+.radius-15 {
+  border-radius: 15px;
+  background-color: var(--primaryGreen);
+  height: 100%;
+}
+
+.radius-15:hover{
+  transform: scale(1.01);
+}
+
+.cardVoordelen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-style: none;
+  border-radius: 50px;
+  background-color: #2F6C3A;
+  color: var(--background);
+  width: 100%;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: .5rem;
+}
+
+
+@media screen and (max-width: 1100px){
+  /*kaarten bij partners ens over ons*/
+  .medeCard, .partnerCard{
+    border-radius: 5vw;
+    padding: 0px 0 0px 0px;
+    margin-bottom: 10vw;
+  }
+
+
+    /*landing home en bedrijven*/
+  .call-to-action-usp > p{
+    font-size: 1.7vw;
+  }
+
+  /*voordelenkaartjes*/
+
+  .radius-15 > h1 {
+    font-size: 2vw !important;
+  }
+
+  .radius-15 > h5 {
+    font-size: 1.3vw !important;
+  }
+
+
+  /*nieuwskaarten*/
+
+  .nieuwsCard{
+    width: 100%;
+    border-radius: 60px;
+    padding: 30px 0 30px 0px;
+  }
+
+  .nieuwsCard > img{
+    border-radius: 50% 50% 40% 45% / 45% 60% 35% 45%;
+    padding: 3vw 3.6vw 2vw 3.6vw !important;
+    width: 25vw;
+  }
+
+  .nieuwsCard > div > h5{
+    font-size: 2.1vw;
+  }
+
+  .nieuwsCard > div > span{
+    font-size: 1.3vw;
+  }
+
+  .nieuwsCard > div > p{
+    font-size: 0.8vw;
+    padding: 20px 60px 20px 60px;
+  }
+
+
+
+}
+
+
+
+@media screen and (max-width: 991px){
+  .imageContainerBedrijf > h2, .imageContainerBeheer > h2, .blok2bedrijf > h2, .blok4 > h2,
+  .blok3bedrijf > h2, .blok2beheer > h2, .prijs, .blok4bedrijf > h2,  .blok5bedrijf > h2
+  ,.blok1hoeText > h2, .imageContainerHoe > h2, .streefdoelenText > h2, .blok3overOnsTextContainer > h2
+  , .blok3partners > h2, .blok1Realisaties > h2, .blok2RealisatiesH2Container > h2
+  , .blok0hoeInfoContainer > h2, .eerstebBlokHoeTextContainer > h2, .blok5BedrijfInfoContainer > h2
+  , .blok6bedrijf > h2, .blok4hoeInfoContainer > h2{
+    font-size: 6vw;
+  }
+
+  .blok1BedrijfInfoContainer > h4, .blok1BeheerInfoContainer > h4
+  , .imageContainerBeheer > h4, .blok2beheer > h4, .blok5bedrijf > h4
+  , .blok0hoeInfoContainer > h4,
+  .blok1hoeText > h4, .blok1HoeInfoContainer > h4, .streefdoelenText > h4
+  , .partnerText, .ceo, .overOnsText, .blok3overOnsTextContainer > h4
+  , .blok5BedrijfInfoContainer > h4, .blok4hoeInfoContainer > h4{
+    font-size: 4vw;
+  }
+
+  .imageContainerBedrijf > h2, .imageContainerBeheer > h2 , .imageContainerHoe > h2{;
+    margin-top: 2vw;
+  }
+
+
+  .blok1BedrijfInfoContainer > p, .blok2bedrijf >p,
+  .blok1BeheerInfoContainer > p, .blok2beheer > p, .blok3beheer >p
+  ,.pBlok0HoeInfoContainer, .blok1HoeInfoContainer > p, .quote, .pBlok4HoeInfoContainer
+  , .blok5BedrijfInfoContainer > p, .blok1hoeText > h3
+  {
+    font-size: 3vw !important;
+  }
+
+  .call-to-action-usp > p{
+    padding-left: 3em;
+    padding-right: 3em;
+    font-size: 1.7vw;
+  }
+
+  .call-to-action-background2{
+    margin-top: -5px;
+  }
+
+  /*blob met kaart*/
+
+  #kaartBlob{
+    margin-top: 6vw;
+    width: 97.5vw;
+    height: 55vw;
+  }
+
+  .kaartBlobContainer > img{
+    width: 90vw;
+    margin-top: -55vw;
+    position: relative;
+    z-index: 10;
+    border-radius: 50px;
+  }
+
+  /*blob aan één kant en foto, tekst aan de andere kant*/
+  .imageContainerBedrijf, .imageContainerBeheer, .imageContainerHoe{
+      padding-left: 25%;
+  }
+
+
+  /*blobs links en rechts*/
+
+  #blobSvg, #blobSvg2{
+    width: 85%;
+    height: 85%;
+  }
+
+  /*overige headers*/
+
+  .backgroundGreen2{
+    height: 35vw;
+  }
+
+  .heading2{
+    padding-top: 10vw;
+  }
+
+  .logo-header2{
+    width: 15vw;
+  }
+
+  .heading2 > h1{
+    font-size: 5vw;
+  }
+
+
+  /*voordelen kaarjes*/
+
+  .radius-15 > h1 {
+    font-size: 4vw !important;
+  }
+
+  .radius-15 > h5 {
+    font-size: 2.3vw !important;
+  }
+
+
+  /*nieuwskaarten*/
+
+  .nieuwsCard > img{
+    border-radius: 50% 50% 40% 45% / 45% 60% 35% 45%;
+    padding: 3vw 3.6vw 2vw 3.6vw !important;
+    width: 55vw;
+  }
+
+  .nieuwsCard > div > h5{
+    font-size: 4.1vw;
+  }
+
+  .nieuwsCard > div > span{
+    font-size: 2.3vw;
+  }
+
+  .nieuwsCard > div > p{
+    font-size: 2.3vw;
+    padding: 20px 60px 20px 60px;
+  }
+
+  #blobSvg> g > path{
+    fill :var(--primaryBlue) !important;
+  }
+
+  #blobSvg2> g > path{
+    fill :var(--primaryGrey) !important;
+  }
+}
+
+
+@media screen and (max-width: 769px){
+
+  /*kaarten bij partners ens over ons*/
+  .medeCard, .partnerCard{
+    padding: 100px 0 100px 0px;
+  }
+}
+
+
+@media screen and (max-width: 576px){
+  /*overige headers*/
+
+  .backgroundGreen2{
+    height: 75vw;
+  }
+
+  .heading2{
+    padding-top: 25vw;
+  }
+
+  .logo-header2{
+    width: 25vw;
+  }
+
+  .heading2 > h1{
+    font-size: 7vw;
+  }
+
+  .imageContainerBedrijf > h2, .imageContainerBeheer > h2, .blok2bedrijf > h2, .blok4 > h2,
+  .blok3bedrijf > h2, .blok2beheer > h2, .prijs, .blok4bedrijf > h2,  .blok5bedrijf > h2
+  ,.blok1hoeText > h2, .streefdoelenText > h2, .blok3overOnsTextContainer > h2
+  , .blok3partners > h2, .blok1Realisaties > h2, .blok2RealisatiesH2Container > h2
+  , .blok0hoeInfoContainer > h2, .eerstebBlokHoeTextContainer > h2, .blok5BedrijfInfoContainer > h2
+  , .blok6bedrijf > h2, .blok4hoeInfoContainer > h2, .imageContainerHoe > h2{
+    font-size: 10vw;
+  }
+
+  .blok1BedrijfInfoContainer > h4, .blok1BeheerInfoContainer > h4
+  , .imageContainerBeheer > h4, .blok2beheer > h4, .blok5bedrijf > h4
+  , .blok0hoeInfoContainer > h4,
+  .blok1hoeText > h4, .blok1HoeInfoContainer > h4, .streefdoelenText > h4
+  , .partnerText, .ceo, .overOnsText, .blok3overOnsTextContainer > h4
+  , .blok5BedrijfInfoContainer > h4, .blok4hoeInfoContainer > h4{
+    font-size: 7vw;
+  }
+
+  .blok1hoeText > h3{
+    font-size: 6vw !important;
+  }
+
+  .blok1BedrijfInfoContainer > p, .blok2bedrijf >p,
+  .blok1BeheerInfoContainer > p, .blok2beheer > p, .blok3beheer >p
+  ,.pBlok0HoeInfoContainer, .blok1HoeInfoContainer > p, .quote, .pBlok4HoeInfoContainer
+  , .blok5BedrijfInfoContainer > p
+  {
+    font-size: 5vw !important;
+  }
+
+
+  .callToActionContainer{
+    margin-top: -15.5vw;
+  }
+
+  .call-to-action-background{
+    height: 18.5vw;
+  }
+
+  .call-to-action-usp > p{
+    padding-top: 10vw;
+  }
+
+  .call-to-action > h2, .blok2 > h2, .blok4 > h2, .blok2beheer > h2, .imageContainerBeheer > h2{
+    font-size: 8vw;
+  }
+
+  .blok2beheer > h4, .blok1BeheerInfoContainer > h4{
+    font-size: 5.2vw;
+  }
+
+  .call-to-action-usp > p, .blok1BeheerInfoContainer > p{
+    font-size: 4.4vw;
+  }
+
+  .blok1BeheerInfoContainer > p{
+    margin-top: 5vw;
+    margin-bottom: 15vw;
+  }
+
+  .blok1BeheerInfoContainer{
+    text-align: center;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .beheerBtn2, .beheerBtn3, .hoeBtn, .nieuwsBtn{
+    width: 170px;
+    font-size: 16px;
+  }
+
+
+
+  /*kaart home, beheer en bedrijven*/
+
+
+
+  #kaartBlob{
+    display: none;
+  }
+
+  .kaartBlobContainer > img{
+    width: 95%;
+    height: 60vw;
+    margin-top: 0;
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+  }
+
+
+  /*sectie tekst met tekst rechts en blob links op beheer mee,...*/
+
+
+
+  .blok1BeheerInfoContainer{
+    width: 100%;
+  }
+
+  .treeImage{
+    width: 15vw;
+    height: 15vw;
+  }
+
+  /*blob aan één kant en foto, tekst aan de andere kant*/
+  .imageContainerBedrijf, .imageContainerBeheer{
+    padding-left: 0;
+  }
+  /*de hoogtes worden aangepast in hun eigen component, vanwege de foto*/
+
+
+  /*kaartstijl beheer-mee en partners*/
+  .medeCard, .partnerCard{
+    width: 100%;
+    margin-bottom: 10vw;
+    border-radius: 50px;
+  }
+
+  .medeCard > div > h4{
+    font-size: 6.5vw;
+  }
+
+  .medeCard > div > span{
+    font-size: 5.5vw;
+  }
+  .medeCard > div > p{
+    font-size: 6vw;
+  }
+
+
+  /*blobs links en rechts*/
+
+  #blobSvg, #blobSvg2{
+    width: 95%;
+    height: 95%;
+  }
+
+  /*voordelen kaarjes*/
+
+  .radius-15 > h1 {
+    font-size: 6vw !important;
+  }
+
+  .radius-15 > h5 {
+    font-size: 4vw !important;
+  }
+
+
+
+}
 

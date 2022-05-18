@@ -12,7 +12,7 @@
 /*eerste blok*/
 
 .eerstebBlokHoe{
-  margin-top: 20vw;
+  margin-top: 30vw;
   margin-bottom: 10vw;
 }
 
@@ -28,15 +28,15 @@
   color: white;
 }
 
-.bosBrandFoto{
-  width: 40vw;
+.bosFoto{
+  width: 37vw;
   margin-top: -25vw;
   border-radius: 50px;
   position: center;
   z-index: 20;
 }
 
-.bosBrandFoto:hover{
+.bosFoto:hover{
   transform: scale(1.05);
   transition: 300ms;
 }
@@ -62,7 +62,7 @@
   margin-bottom: 1vw;
 }
 
-.blobContainerHoe0{
+.blobContainerHoe0, .blobContainerHoe4{
   text-align: right;
 }
 
@@ -71,15 +71,17 @@
   width: 33vw;
   position: relative;
   z-index: 10;
-  margin-top: -42vw;
+  margin-top: -37vw;
   border-radius: 50px;
 }
 
-.blobSVGcontainerHoe0{
-  margin-right: -5.479vw
+.blobSVGcontainerGlobal{
+  margin-right: -5.479vw;
+  margin-top: 20vw;
 }
 
-#blobInfoHoe0{
+
+#blobInfoHoe0, #blobInfoHoe4{
   moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -99,7 +101,7 @@
 /*blok1hoe*/
 
 .blok1hoe{
-  margin-bottom: 25vw;
+  margin-bottom: 15vw;
 }
 
 .blok1hoeText{
@@ -107,53 +109,26 @@
 }
 
 .blok1hoeText > h3{
-  margin-bottom: 5vw;
-  margin-top: 6vw;
+  margin-bottom: 10vw;
+  margin-top: 10vw;
   color: var(--primaryBlue);
   font-size: 2vw;
 }
 
-.blok1hoeText > h4{
-  padding-left: 10vw;
-  padding-right: 10vw;
-}
-
-.container{
+.containerVoordelen{
   margin-top: -25vw;
 }
 
+.voordelenBlob2{
+  margin-top: -2vw;
+}
+
 .radius-15 {
-  border-radius: 15px;
-  background-color: var(--primaryGreen);
-  height: 250px;
 }
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-clip: border-box;
-  border-style: none;
-  border-radius: 50px;
-  margin-bottom: 1.5rem;
-  background-color: #2F6C3A;
-  color: var(--background);
-  height: 285px;
-}
-
-.list-inline-item:not(:last-child) {
-  margin-right: .5rem;
-}
-
 
 
 /*blok2*/
 
-
-.blok2hoe{
-  margin-top: 10vw
-}
 
 .blobContainerHoe1 > img{
   height: 24.75vw;
@@ -171,7 +146,6 @@
 }
 
 #blobInfoHoe1{
-
   z-index: -10;
   margin-right: 6.83vw;
   height: 40vw;
@@ -184,7 +158,6 @@
 
 
 /*blok3*/
-
 
 .blok3hoe{
   margin-top: 20vw;
@@ -203,31 +176,270 @@
 }
 
 
-.streefdoelenText{
-  margin-top: 7vw;
-  text-align: center;
-  padding-left: 13vw;
-  padding-right: 13vw;
-}
+/*blok4*/
 
-.streefdoelenText > h4{
-  margin-top: 7vw;
-}
 
-.streefdoelenBlobContainer{
-  text-align: center;
-  z-index: -10;
-  margin-top: -175px;
+
+.blok4hoe{
+  margin-top: 15vw;
   margin-bottom: 15vw;
 }
 
-#steefdoelenBlob{
-  moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  z-index: -10;
-  height: 17vw;
-  width: 95vw;
-  opacity: 30%;
+.blok4hoeInfoContainer{
+  padding-left: 4vw;
+}
+
+/*de rest staat bovenaan bij blok 0*/
+
+.blobContainerHoe4> img{
+  height: 22vw;
+  width: 33vw;
+  position: relative;
+  z-index: 10;
+  margin-top: -42vw;
+  margin-right: 5.5vw;
+  border-radius: 50px;
+}
+
+
+
+/*ipad*/
+
+
+
+@media screen and (max-width: 991px){
+  .blobContainer{
+    margin-top: 20vw;
+    margin-bottom: 50vw;
+  }
+
+  .blobContainer > p{
+    font-size: 3.5vw;
+    margin-top: -77.5vw;
+    padding-right: 37.5vw;
+    padding-left: 5vw;
+  }
+
+  .bosFoto{
+    width: 85vw;
+  }
+
+  .blobContainer2{
+    margin-top: 35vw;
+  }
+
+  .blobContainer2 > p{
+    font-size: 3.5vw;
+    margin-top: -77.5vw;
+    padding-left: 37.5vw;
+    padding-right: 5vw;
+  }
+
+
+
+  /*blok2*/
+
+
+
+  .blok0hoeInfoContainer, .blok4hoeInfoContainer{
+    width: 90%;
+    text-align: center;
+  }
+
+  .imageContainerHoe{
+    text-align: center;
+  }
+
+  .blok0hoeInfoContainer > p {
+    padding-right: 1vw;
+  }
+
+  .blobSVGcontainerGlobal{
+    text-align: end;
+    margin-right: 0;
+  }
+
+
+  /*blok3*/
+
+  .blok1hoeText{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-bottom: 40vw;
+  }
+
+  .voorderlenBlob{
+    display: none;
+  }
+
+
+  /*blok4*/
+
+  .blok2hoe{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blobContainerHoe1 {
+    margin-bottom: 20vw;
+    margin-top: 10vw;
+    order: 2;
+  }
+
+  .blobContainerHoe1  > img{
+    height: 72vw;
+    width: 55vw;
+    margin-left: 15vw;
+    margin-top: 10vw;
+  }
+
+  .blok1HoeInfoContainer{
+    width: 90%;
+    text-align: center;
+    order: 1;
+  }
+
+  .imageContainerHoe{
+    text-align: center;
+  }
+
+  .imageContainerHoe > p {
+    padding-right: 1vw;
+  }
+
+  #blobInfoHoe1{
+    width: 90%;
+    height: 90vw;
+    margin-right: 0;
+  }
+
+
+  /*blok 5*/
+
+
+  .icon-bar1{
+    width: 100%;
+  }
+
+  .icon-bar1 > i {
+    font-size: 4vw;
+  }
+
+  .icon-bar1 > i >p {
+    font-size: 2.2vw;
+  }
+
+
+
+  /*blok6*/
+
+
+
+  .blobContainerHoe4 > img{
+    height: 53vw;
+    width: 75vw;
+    margin-right: 15vw;
+    margin-top: -135vw;
+  }
+
+  #blobInfoHoe4{
+    width: 90%;
+    height: 90vw;
+    margin-right: 0;
+  }
+}
+
+
+@media screen and (max-width: 576px){
+  /*blok1*/
+
+  .eerstebBlokHoe{
+    margin-top: 60vw;
+  }
+
+  .blobContainer{
+    margin-top: 10vw;
+    margin-bottom: 50vw;
+  }
+
+  .blobContainer > p{
+    font-size: 3.9vw;
+    margin-top: -88vw;
+    padding-right: 30vw;
+    padding-left: 3vw;
+  }
+
+  .bosFoto{
+    width: 95vw;
+    margin-top: 0;
+    border-radius: 25px;
+  }
+
+
+  .blobContainer2{
+    margin-top: 60vw;
+  }
+
+  .blobContainer2 > p{
+    font-size: 3.9vw;
+    margin-top: -85vw;
+    padding-left: 30vw;
+    padding-right: 3vw;
+  }
+
+  .blobContainerHoe0 > img{
+    height: 60vw;
+    width: 85vw;
+    margin-top: -110vw;
+    border-radius: 20px;
+  }
+
+
+  /*blok 3 */
+
+
+  .imageContainerHoe > h2{
+    font-size: 9vw !important;
+  }
+
+
+
+  /*blok4*/
+
+
+
+  .blobContainerHoe1  > img{
+    border-radius: 20px;
+    margin-left: 20vw;
+  }
+
+
+  /*iconbar*/
+
+  .icon-bar1{
+    padding: 0 10px 0 0;
+  }
+
+  .icon-bar1 > i{
+    font-size: 25px;
+  }
+
+  .icon-bar1 > i >p {
+    font-size: 2.6vw;
+    font-weight: 200;
+  }
+
+
+
+  /*blok 6*/
+
+
+
+  .blobContainerHoe4 > img{
+    height: 60vw;
+    width: 85vw;
+    margin-top: -135vw;
+    border-radius: 20px;
+    margin-right: 10vw;
+  }
 }

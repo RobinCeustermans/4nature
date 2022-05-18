@@ -17,4 +17,7 @@ export class FooterComponent implements OnInit {
       e.preventDefault;
   }
 
+
+
+
 }

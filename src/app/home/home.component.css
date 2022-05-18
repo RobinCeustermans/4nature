@@ -149,6 +149,7 @@
   border-radius: 60px 0 0 150px;
   margin-left: auto;
   margin-right: 0;
+  margin-top: -1.22vw;
 }
 
 
@@ -265,7 +266,7 @@
 }
 
 .imageBlob{
-  background-image: url("../../assets/img/an-elderly-woman-reading-newspaper-on-the-bench-2021-10-13-18-17-58-utc.jpg");
+  background-image: url("../../assets/img/elderly-woman.jpg");
 }
 
 .nieuwsBlobContainer1{
@@ -293,8 +294,14 @@
   z-index: -10;
 }
 
+@media screen and (max-width: 1300px) {
+  .icon-bar2 {
+    margin-top: -1.5vw;
+  }
+}
 
 @media screen and  (max-width: 1200px){
+
   .cardContainer{
     padding: 0px 1px 0px 20px;
     margin-bottom: 100px;
@@ -306,15 +313,39 @@
   }
 }
 
+
+
+@media screen and  (max-width: 1100px){
+  .blobContainer >p{
+    margin-left: 30px;
+    margin-top: -30vw;
+    font-size: 1.3vw;
+  }
+
+  .blobContainer2 > p{
+    margin-right: 30px;
+    margin-top: -30.5vw;
+    padding-left: 71vw;
+    font-size: 1.3vw;
+  }
+
+  .vlaanderenImg{
+    width: 38vw;
+    height: 20vw;
+  }
+
+
+
+}
+
 @media screen and (max-width: 991px ){
 
   .vlaanderenImg{
     border-radius: 150px;
     width: 100%;
     height: 100%;
-    margin-top: 120px;
+    margin-top: 25vw;
     padding: 60px;
-
   }
 
   #blobSvg, #blobSvg2{
@@ -341,6 +372,10 @@
     padding-left: 33vw;
     font-size: 3.3vw;
     letter-spacing: 0;
+  }
+
+  .icon-bar2 {
+    margin-top: 0;
   }
 
   .beheerBtn3{
@@ -375,8 +410,8 @@
     padding-bottom: 10px;
   }
 
-  .icon-bar1 > i > p {
-    font-size: 2.1vw;
+  .icon-bar1 > i > p,  .icon-bar2 > i > p{
+    font-size: 2.3vw;
   }
 
   #blob1SvgBlok3, #blob2SvgBlok3{
@@ -407,42 +442,6 @@
 
   /*blok4*/
 
-
-  .cardContainer{
-    padding: 0px 6px 0px 25px !important;
-    margin-bottom: 100px;
-    text-align: center;
-  }
-
-  .nieuwsCard{
-    margin-bottom: 10vw;
-  }
-
-  .nieuwsCard > img{
-    width: 90%;
-  }
-
-
-  .nieuwsBlobContainer1{
-    margin-bottom: -80vw;
-  }
-
-  .nieuwsBlobContainer2{
-    margin-top: -105vw;
-  }
-
-  #blobNieuws1, #blobNieuws2{
-    height: 90%;
-    width: 100%;
-  }
-
-  .nieuwsCard > img{
-    padding: 20px;
-  }
-
-  .nieuwsBtn{
-    margin-top: 15vw;
-  }
 
 }
 

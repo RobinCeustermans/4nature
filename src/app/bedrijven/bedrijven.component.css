@@ -24,13 +24,23 @@
   width: 33vw;
   position: relative;
   z-index: 10;
-  margin-top: 7vw;
+  margin-top: -35vw;
   border-radius: 50px;
 }
 
-.blobSVGcontainerBedrijf1{
-  margin-right: 33.497vw
+.blobSVGcontainerGlobal{
+  text-align: right;
+  margin-right: -6.5vw
 }
+
+#blobSvg2{
+  margin-top: -22.5vw;
+}
+
+.blobSVGcontainerHoe{
+  margin-top: 20vw;
+}
+
 
 #blobInfoBedrijf1{
   moz-transform: scaleX(-1);
@@ -38,14 +48,14 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   z-index: -10;
-  margin-right: 6.83vw;
   height: 40vw;
   width: 40.33vw;
-  position: absolute;
+  position: relative;
   max-height: inherit;
   max-width: inherit;
   box-sizing: border-box;
 }
+
 
 
 /*blok3*/
@@ -69,65 +79,12 @@
   margin-bottom: -550px;
 }
 
-
-.tilesWrap {
-  padding: 0;
-  justify-content: center;
-  list-style: none;
-  text-align: center;
-  display: flex;
-  margin-top: 3vw;
-}
-.tilesWrap li {
-  display: inline-block;
-  width: 20vw;
-  padding: 80px 20px 40px;
-  position: relative;
-  vertical-align: top;
-  margin: 10px;
-  border-radius: 50px;
-  height: 25vw;
-  background-color: var(--primaryBlue);
-  text-align: center;
-
-}
-.tilesWrap li h2 {
-  font-size: 114px;
-  margin: 0;
-  position: absolute;
-  opacity: 0.2;
-  top: 50px;
-  right: 10px;
-  transition: all 0.3s ease-in-out;
-}
-.tilesWrap li h3 {
-  font-size: 20px;
-  color: var(--background);
-  margin-bottom: 5px;
-}
-.tilesWrap li p {
-  font-size: 16px;
-  line-height: 18px;
-  color: #b7b7b7;
+.containerVoordelen{
   margin-top: 2vw;
 }
-.tilesWrap li button {
-  background: transparent;
-  border: 1px solid #b7b7b7;
-  padding: 10px 20px;
-  color: #b7b7b7;
-  border-radius: 3px;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-  transform: translateY(-40px);
-  opacity: 0;
-  cursor: pointer;
-  overflow: hidden;
-}
 
-.tilesWrap li:hover h2 {
-  top: 0px;
-  opacity: 0.6;
+.cardVoordelen {
+  min-height: 450px;
 }
 
 
@@ -147,6 +104,7 @@
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   margin-left: 30px;
   margin-right: 30px;
+  opacity: 90%;
 }
 
 .pricing hr {
@@ -188,7 +146,7 @@
   border-radius: 5rem;
   letter-spacing: .1rem;
   font-weight: bold;
-  width: 15vw;
+  width: 250px;
   height: 40px;
   transition: all 0.2s;
   left: 25%;
@@ -230,3 +188,232 @@
   text-align: center;
   margin-bottom: 15vw;
 }
+
+
+.blobContainerBedrijf5 > img{
+  height: 24.75vw;
+  width: 33vw;
+  position: relative;
+  z-index: 10;
+  margin-top: 7vw;
+  border-radius: 50px;
+  margin-left: 7vw;
+}
+
+.blobSVGcontainerBedrijf5{
+  margin-right: 33.497vw;
+  text-align: left;
+}
+
+#blobInfoBedrijf5{
+  z-index: -10;
+  margin-right: 6.83vw;
+  height: 40vw;
+  width: 40.33vw;
+  position: absolute;
+  max-height: inherit;
+  max-width: inherit;
+  box-sizing: border-box;
+}
+
+.blok5BedrijfInfoContainer{
+  text-align: left;
+}
+
+
+
+
+/*blok6*/
+
+
+
+.blok6bedrijf{
+  text-align: center;
+  margin-bottom: 10vw;
+}
+
+@media screen and  (max-width: 1800px){
+  .blobSVGcontainerHoe{
+    margin-right: -6.8vw !important;
+  }
+}
+
+@media screen and (max-width: 1400px){
+
+  .pricing .btn {
+  margin-top: 4vw;
+  }
+}
+
+@media screen and (max-width: 1400px){
+
+  .pricing .btn {
+    margin-top: 13vw;
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .blobSVGcontainerHoe{
+    margin-right: -8vw !important;
+  }
+
+  .pricing .btn {
+    margin-top: 14vw;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  /*blok 2*/
+  .blok1BedrijfInfoContainer{
+    width: 96%;
+    text-align: center;
+  }
+
+  .blobSVGcontainerGlobal{
+    text-align: right;
+    margin-top: 40vw;
+    margin-right: -3vw !important;
+  }
+
+  .blobContainerBedrijf1 > img{
+    height: 60vw;
+    width: 80vw;
+    margin-right: 5vw;
+    margin-top: -95vw;
+    border-radius: 20px;
+  }
+
+
+
+
+  /*blok3*/
+
+  .blok3bedrijf{
+    margin-top: 20vw;
+  }
+
+  .cardVoordelen {
+    min-height: 300px;
+  }
+
+  #voordelenBlob{
+    display: none;
+  }
+
+  .containerVoordelen{
+    margin-top: 6vw;
+  }
+
+  /*blok 4*/
+
+  .blok4bedrijf{
+    margin-top: 20vw;
+  }
+
+  .prijsContainer{
+    margin-top: -75vw;
+    margin-bottom: -52.5vw;
+  }
+
+  .prijsKolom{
+    padding-right: 8vw;
+    padding-left: 8vw;
+  }
+
+
+  /*blok5*/
+
+
+
+  .blok5bedrijf{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40vw;
+    margin-top: 20vw;
+  }
+
+  .blobContainerBedrijf5{
+    order: 2;
+    margin-top: 10vw;
+  }
+
+  .blok5BedrijfInfoContainer{
+    order: 1;
+    width: 90%;
+    text-align: center;
+  }
+
+  #blobInfoBedrijf5{
+    margin-right: 6.83vw;
+    height: 85vw;
+    width: 85vw;
+  }
+
+  .blobContainerBedrijf5 > img{
+    height: 60vw;
+    width: 80vw;
+    position: relative;
+    z-index: 10;
+    margin-top: 12vw;
+    border-radius: 20px;
+    margin-left: 1vw;
+  }
+}
+
+
+@media screen and (max-width: 569px){
+  /*blok2*/
+  .blok1BedrijfInfoContainer{
+    width: 98%;
+  }
+
+  .imageContainerBedrijf > h2{
+    font-size: 9vw;
+    margin-bottom: 5vw;
+  }
+
+  .blobSVGcontainerGlobal{
+    margin-right: -6vw !important;
+  }
+
+  .blobContainerBedrijf1 > img{
+    height: 65vw;
+    width: 85vw;
+    margin-right: 0vw;
+    margin-top: -110vw;
+    border-radius: 20px;
+  }
+
+
+  /*blok3*/
+
+  .blok3bedrijf{
+    margin-top: 30vw;
+  }
+
+  .cardVoordelen {
+    min-height: 300px;
+  }
+
+  .containerVoordelen{
+    margin-top: 10vw;
+  }
+
+
+  /*blok4*/
+
+  .pricing .btn {
+    margin-top: 20vw;
+  }
+
+  .imageContainerHoe{
+    padding-left: 10%;
+  }
+
+
+
+}
+
+

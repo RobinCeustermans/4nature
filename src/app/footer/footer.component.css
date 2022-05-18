@@ -101,7 +101,7 @@
 
 .footerGolf{
   bottom: 0;
-  height: 100px;
+  height: 7rem;
   width: 100%;
   background-image: url("../../assets/img/imageImp.png");
   background-repeat: no-repeat;
@@ -192,13 +192,19 @@ input[type=number] {
     font-size: 2vw;
     padding: 0 5px 0 5px;
   }
+
+  .footerGolf > div> br{
+    display: flex;
+  }
+
 }
 
 @media screen and (max-width: 576px) {
 
   .fieldParent{
     border-radius: 50px 50px 0 0px;
-    padding-right: 50px;
+    padding-right: 4vw;
+    text-align: center;
   }
 
 
@@ -207,6 +213,23 @@ input[type=number] {
     border-radius: 0px 0px 50px 50px;
     margin-top: -50px;
     padding-bottom: 10vw;
+    padding-left: 10vw;
+  }
+
+  .iconContainer >span {
+    font-size: 4.5vw;
+    padding-left: 6vw;
+  }
+
+  .footerGolfContainer > i > img{
+    margin-left: 5vw;
+    height: 70px;
+    width: 70px;
+  }
+
+  .footerGolf > div> span{
+    font-size: 2.8vw;
+    padding: 5px 0px 5px 0px;
   }
 
   .footerGolf > div> span{

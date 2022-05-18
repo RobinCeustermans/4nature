@@ -1,15 +1,11 @@
 .blok1Realisaties{
   margin-top: 25vw;
   text-align: center;
-  margin-bottom: 10vw;
+  margin-bottom: 25vw;
 }
 
 .blok1Realisaties > h2 {
   margin-bottom: 3vw;
-}
-
-.flipContainer{
-  text-align: center;
 }
 
 .realisatieTitel{
@@ -17,6 +13,168 @@
   margin-top: 2vw;
 }
 
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
+
+.cardBox:hover .card {
+  transform: rotateX( 180deg);
+}
+
+.cardBox > .card {
+  background: #22502A;
+  background: url("../../assets/img/treeCard.jpg");
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.cardBox > .card > .front > h3{
+  margin-top: 1.5vw;
+}
+
+.logoFlip{
+  margin-top:1vw;
+  width: 4vw;
+}
+
+.cardBox > .card .front,
+.cardBox > .card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.cardBox > .card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.cardBox > .card .back {
+  transform: rotateX( 180deg);
+}
+
+.cardBox > .card >.back {
+  background: var(--primaryGreen);
+
+}
+
+.back > p{
+    padding-top: 15%;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1025px){
+  .blok1Realisaties{
+    margin-bottom: 35vw;
+  }
+
+  .blok2Realisaties{
+    margin-top: 50vw;
+  }
+
+  .beheerBtn3{
+    margin-top: 10vw;
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .blobContainer{
+    margin-bottom: -70vw;
+  }
+
+  .blobContainer2{
+    margin-top: -70vw;
+  }
+}
+
+
+@media screen and (max-width: 769px) {
+  .blok1Realisaties{
+    margin-bottom: 50vw;
+  }
+
+  .blok2Realisaties{
+    margin-top: 120vw;
+  }
+
+  .blok2RealisatiesH2Container{
+    margin-bottom: 10vw;
+  }
+
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    /*height: 285px;*/
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+
+@media screen and (max-width: 568px){
+  
+}
+
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
+  }
+}
 
 
 /*blok2, de rest staat in het scss file*/
@@ -32,46 +190,6 @@
   text-align: center;
 }
 
-.cardContainer{
-  padding: 0px 110px 0px 120px;
-  text-align: center;
-  width: 100%;
-  margin-top: -25vw;
-}
 
-.nieuwsCard{
-  width: 90%;
-  border-radius: 100px;
-  padding: 60px 0 60px 0px;
-  opacity: 85%;
-  margin-top: 3vw;
-  text-align: center;
-}
-
-.nieuwsCard > img{
-  border-radius: 50% 50% 40% 45% / 45% 60% 35% 45%;
-  padding: 2vw 2.3vw 2vw 2.3vw;
-  width: 25vw;
-  margin: 0 auto;
-  left: 25%
-}
-
-.nieuwsCard > div > span{
-  color: var(--primaryBlue)
-}
-
-.nieuwsCard > div > p{
-  padding: 20px 60px 20px 60px;
-}
-
-.nieuwsCard > div > a{
-  border-style: none;
-  border-radius: 15px;
-  background-color: var(--primaryBlue);
-  color: var(--background);
-  width: 150px;
-  font-size: 18px;
-  font-weight: 600;
-}
 
 
