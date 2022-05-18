@@ -604,7 +604,7 @@ body{
 
 /*stijl nieuwskaart op de home en nieuwsfeedpagina*/
 .cardContainer{
-  padding: 0px 110px 0px 120px;
+  padding: 0 110px 0 120px !important;
   text-align: center;
   width: 100%;
   margin-top: -25vw;
@@ -651,10 +651,15 @@ body{
   width: 150px;
   font-size: 18px;
   font-weight: 600;
-
 }
 
+#blobSvg> g > path{
+  fill :var(--primaryBlue) !important;
+}
 
+#blobSvg2> g > path{
+  fill :var(--primaryGrey) !important;
+}
 
 /*partners en over-ons blob met tekst*/
 
@@ -734,7 +739,7 @@ body{
   /*kaarten bij partners ens over ons*/
   .medeCard, .partnerCard{
     border-radius: 5vw;
-    padding: 0px 0 0px 0px;
+    padding: 0;
     margin-bottom: 10vw;
   }
 
@@ -760,7 +765,7 @@ body{
   .nieuwsCard{
     width: 100%;
     border-radius: 60px;
-    padding: 30px 0 30px 0px;
+    padding: 30px 0 30px 0 !important;
   }
 
   .nieuwsCard > img{
@@ -890,11 +895,18 @@ body{
 
 
   /*nieuwskaarten*/
+  .nieuwsBlobContainer1{
+    margin-bottom: -70vw;
+  }
+
+  .nieuwsBlobContainer2{
+    margin-top: -70vw;
+  }
 
   .nieuwsCard > img{
     border-radius: 50% 50% 40% 45% / 45% 60% 35% 45%;
     padding: 3vw 3.6vw 2vw 3.6vw !important;
-    width: 55vw;
+    width: 55vw !important;
   }
 
   .nieuwsCard > div > h5{
@@ -909,14 +921,6 @@ body{
     font-size: 2.3vw;
     padding: 20px 60px 20px 60px;
   }
-
-  #blobSvg> g > path{
-    fill :var(--primaryBlue) !important;
-  }
-
-  #blobSvg2> g > path{
-    fill :var(--primaryGrey) !important;
-  }
 }
 
 
@@ -924,7 +928,7 @@ body{
 
   /*kaarten bij partners ens over ons*/
   .medeCard, .partnerCard{
-    padding: 100px 0 100px 0px;
+    padding: 100px 0 100px 0;
   }
 }
 
@@ -1096,6 +1100,44 @@ body{
   }
 
 
+  /*nieuwskaarten*/
+  .nieuwsBlobContainer1{
+    margin-bottom: -90vw;
+  }
 
+  .nieuwsBlobContainer2{
+    margin-top: -90vw;
+  }
+
+  .nieuwsBtn{
+    margin-top: 35vw;
+  }
+
+  .cardContainer{
+    padding: 0  !important;
+  }
+
+  .nieuwsCard{
+    height: 100% !important;
+    border-radius: 50px !important;
+  }
+
+  .nieuwsCard > img{
+    padding: 2vw !important;
+    width: 75vw !important;
+  }
+
+  .nieuwsCard > div > h5{
+    font-size: 7vw;
+  }
+
+  .nieuwsCard > div > span{
+    font-size: 4vw;
+  }
+
+  .nieuwsCard > div > p{
+    font-size: 4vw;
+    padding: 20px 60px 20px 60px;
+  }
 }
 

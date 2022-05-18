@@ -223,75 +223,11 @@
   margin-bottom: 20vw;
 }
 
-.cardContainer{
-  padding: 0 5vw 0 5.2vw;
-  margin-bottom: 100px;
-  text-align: center;
-  width: 100%;
-}
 
-.nieuwsCard{
-  width: 90%;
-  border-radius: 100px;
-  padding: 60px 0 60px 0px;
-  opacity: 85%;
-  text-align: center;
-}
 
-.nieuwsCard > img{
-  border-radius: 50% 50% 40% 45% / 45% 60% 35% 45%;
-  padding: 1vw 4vw 1vw 4vw;
-  width: 25vw;
-  margin: 0 auto;
-  left: 25%
-}
-
-.nieuwsCard > div > p{
-  padding: 20px 60px 20px 60px;
-}
-
-.nieuwsCard > div > a{
-  border-style: none;
-  border-radius: 15px;
-  background-color: var(--primaryBlue);
-  color: var(--background);
-  width: 150px;
-  font-size: 18px;
-  font-weight: 600;
-
-}
-
-.nieuwsBtn{
-  background-color: var(--primaryBlue);
-}
 
 .imageBlob{
   background-image: url("../../assets/img/elderly-woman.jpg");
-}
-
-.nieuwsBlobContainer1{
-  text-align: left;
-  z-index: -10;
-  margin-bottom: -28vw;
-}
-
-.nieuwsBlobContainer2{
-  text-align: right;
-  margin-top: -33vw;
-}
-
-#blobNieuws1, #blobNieuws2{
-  height: 35vw;
-  width: 40vw;
-}
-
-#blobNieuws2{
-  moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  position: relative;
-  z-index: -10;
 }
 
 @media screen and (max-width: 1300px) {
@@ -304,7 +240,6 @@
 
   .cardContainer{
     padding: 0px 1px 0px 20px;
-    margin-bottom: 100px;
     text-align: center;
   }
 
@@ -333,9 +268,6 @@
     width: 38vw;
     height: 20vw;
   }
-
-
-
 }
 
 @media screen and (max-width: 991px ){
@@ -431,18 +363,12 @@
     margin-bottom: 25vw;
   }
 
-
   .blobContainer2-blok3 > p{
     margin-right: 5vw;
     margin-top: -105vw;
     padding-left: 28vw;
     font-size: 3.3vw;
   }
-
-
-  /*blok4*/
-
-
 }
 
 @media screen and (min-width: 992px ) and (max-width: 1621px){
@@ -489,7 +415,6 @@
     padding-right: 25vw;
     /*padding-right: 70vw;*/
     font-size: 3.9vw;
-
   }
 
   .blobContainer2 >p{
@@ -519,26 +444,6 @@
     margin-top: -113vw;
     padding-right: 1vw;
   }
-
-  /*blok4*/
-
-  .cardContainer{
-    padding: 0px 20px 0px 20px;
-  }
-
-  .nieuwsBlobContainer1{
-    margin-bottom: -90vw;
-  }
-
-  .nieuwsBlobContainer2{
-    margin-top: -125vw;
-  }
-
-  .nieuwsBtn{
-    margin-top: 35vw;
-  }
-
-
 }
 
 
